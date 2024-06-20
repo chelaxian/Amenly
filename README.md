@@ -1,25 +1,25 @@
-<img src="https://raw.githubusercontent.com/Amenly/onlyfans-scraper/main/media/icon.png" width="100" align="right">
+<img src="https://raw.githubusercontent.com/Amenly/of-scraper/main/media/icon.png" width="100" align="right">
 
-# onlyfans-scraper
+# of-scraper
 
-![version](https://img.shields.io/pypi/v/onlyfans-scraper) ![python3.8-3.9](https://img.shields.io/pypi/pyversions/onlyfans-scraper) ![downloads](https://img.shields.io/pypi/dm/onlyfans-scraper)
+![version](https://img.shields.io/pypi/v/of-scraper) ![python3.8-3.9](https://img.shields.io/pypi/pyversions/of-scraper) ![downloads](https://img.shields.io/pypi/dm/of-scraper)
 
-A command-line program to download media, like and unlike posts, and more from creators on OnlyFans.
+A command-line program to download media, like and unlike posts, and more from creators on of.
 
-<img src="https://raw.githubusercontent.com/Amenly/onlyfans-scraper/main/media/example.png" width="550">
+<img src="https://raw.githubusercontent.com/Amenly/of-scraper/main/media/example.png" width="550">
 
 ## Installation
 
 You can install this program by entering the following in your terminal:
 
 ```
-pip install onlyfans-scraper
+pip install of-scraper
 ```
 
 If you're on macOS/Linux, then do this instead:
 
 ```
-pip3 install onlyfans-scraper
+pip3 install of-scraper
 ```
 
 ## Setup
@@ -46,14 +46,14 @@ It's really not that bad. I'll show you in the next sections how to get these bi
 
 ### Step One: Creating the 'auth.json' File
 
-You first need to run the program in order for the `auth.json` file to be created. To run it, simply type `onlyfans-scraper` in your terminal and hit enter. Because you don't have an `auth.json` file, the program will create one for you and then ask you to enter some information. Now we need to get that information.
+You first need to run the program in order for the `auth.json` file to be created. To run it, simply type `of-scraper` in your terminal and hit enter. Because you don't have an `auth.json` file, the program will create one for you and then ask you to enter some information. Now we need to get that information.
 
 
 ### Step Two: Getting Your Auth Info
 
-***If you've already used DIGITALCRIMINAL's OnlyFans script, you can simply copy and paste the auth information from there to here.***
+***If you've already used DIGITALCRIMINAL's of script, you can simply copy and paste the auth information from there to here.***
 
-Go to your [notification area](https://onlyfans.com/my/notifications) on OnlyFans. Once you're there, open your browser's developer tools. If you don't know how to do that, consult the following chart:
+Go to your [notification area](https://of.com/my/notifications) on of. Once you're there, open your browser's developer tools. If you don't know how to do that, consult the following chart:
 
 | Operating System | Keys |
 | :----------------: | :----: |
@@ -63,27 +63,27 @@ Go to your [notification area](https://onlyfans.com/my/notifications) on OnlyFan
 
 Once you have your browser's developer tools open, your screen should look like the following:
 
-<img src="https://raw.githubusercontent.com/Amenly/onlyfans-scraper/main/media/browser_tools_open.png">
+<img src="https://raw.githubusercontent.com/Amenly/of-scraper/main/media/browser_tools_open.png">
 
 Click on the `Network` tab at the top of the browser tools:
 
-<img src="https://raw.githubusercontent.com/Amenly/onlyfans-scraper/main/media/network_tab.png">
+<img src="https://raw.githubusercontent.com/Amenly/of-scraper/main/media/network_tab.png">
 
 Then click on `XHR` sub-tab inside of the `Network` tab:
 
-<img src="https://raw.githubusercontent.com/Amenly/onlyfans-scraper/main/media/xhr_tab.png">
+<img src="https://raw.githubusercontent.com/Amenly/of-scraper/main/media/xhr_tab.png">
 
 Once you're inside of the `XHR` sub-tab, refresh the page while you have your browser's developer tools open. After the page reloads, you should see a section titled `init` appear:
 
-<img src="https://raw.githubusercontent.com/Amenly/onlyfans-scraper/main/media/init.png">
+<img src="https://raw.githubusercontent.com/Amenly/of-scraper/main/media/init.png">
 
 When you click on `init`, you should see a large sidebar appear. Make sure you're in the `Headers` section:
 
-<img src="https://raw.githubusercontent.com/Amenly/onlyfans-scraper/main/media/headers.png">
+<img src="https://raw.githubusercontent.com/Amenly/of-scraper/main/media/headers.png">
 
 After that, scroll down until you see a subsection called `Request Headers`. You should then see three important fields inside of the `Request Headers` subsection: `Cookie`, `User-Agent`, and `x-bc`
 
-<img src="https://raw.githubusercontent.com/Amenly/onlyfans-scraper/main/media/request_headers.png">
+<img src="https://raw.githubusercontent.com/Amenly/of-scraper/main/media/request_headers.png">
 
 Inside of the `Cookie` field, you will see a couple of important bits:
 
@@ -101,15 +101,15 @@ Once you do that, the program will ask for your user agent. You should be able t
 
 After it asks for your user agent, it will ask for your `x-bc` token. You should also be able to find this in the `Request Headers` section.
 
-You're all set and you can now use `onlyfans-scraper`.
+You're all set and you can now use `of-scraper`.
 
 
 ## Usage
 
-Whenever you want to run the program, all you need to do is type `onlyfans-scraper` in your terminal:
+Whenever you want to run the program, all you need to do is type `of-scraper` in your terminal:
 
 ```
-onlyfans-scraper
+of-scraper
 ```
 
 That's it. It's that simple.
@@ -118,19 +118,19 @@ That's it. It's that simple.
 
 You will need to use your arrow keys to select an option:
 
-<img src="https://raw.githubusercontent.com/Amenly/onlyfans-scraper/main/media/main_menu.png" width="450">
+<img src="https://raw.githubusercontent.com/Amenly/of-scraper/main/media/main_menu.png" width="450">
 
 If you choose to download content, you will have three options: having a list of all of your subscriptions printed, manually entering a username, or scraping *all* accounts that you're subscribed to.
 
-<img src="https://raw.githubusercontent.com/Amenly/onlyfans-scraper/main/media/list_or_username.png" width="550">
+<img src="https://raw.githubusercontent.com/Amenly/of-scraper/main/media/list_or_username.png" width="550">
 
 ### Liking/Unliking Posts
 
 You can also use this program to like all of a user's posts or remove your likes from their posts. Just select either option during the main menu screen and enter their username.
 
-This program will like posts at a rate of around one post per second. This may be reduced in the future but OnlyFans is strict about how quickly you can like posts.
+This program will like posts at a rate of around one post per second. This may be reduced in the future but of is strict about how quickly you can like posts.
 
-At the moment, you can only like ~1000 posts per day. That's not *our* restriction, that's OnlyFans's restriction. So choose wisely.
+At the moment, you can only like ~1000 posts per day. That's not *our* restriction, that's of's restriction. So choose wisely.
 
 ### Migrating Databases
 
@@ -146,7 +146,7 @@ For example, if you have a directory that looks like the following:
 Users
 |__ home
     |__ .sites
-        |__ OnlyFans
+        |__ of
             |__ melodyjai
                 |__ Metadata
                     |__ Archived.db
@@ -154,10 +154,10 @@ Users
                     |__ Posts.db
 ```
 
-Then the path you enter should be `/Users/home/.sites/OnlyFans/melodyjai/Metadata`. The program will detect the .db files in the directory and then ask you for the username to whom those .db files belong. The program will then move the relevant data over.
+Then the path you enter should be `/Users/home/.sites/of/melodyjai/Metadata`. The program will detect the .db files in the directory and then ask you for the username to whom those .db files belong. The program will then move the relevant data over.
 
 ## Bugs/Issues/Suggestions
 
-If you run into any trouble while using this script, or if you're confused on how to get something running, feel free to [open an issue](https://github.com/Amenly/onlyfans-scraper/issues/new) or [open a discussion](https://github.com/Amenly/onlyfans-scraper/discussions/new). I don't bite :D
+If you run into any trouble while using this script, or if you're confused on how to get something running, feel free to [open an issue](https://github.com/Amenly/of-scraper/issues/new) or [open a discussion](https://github.com/Amenly/of-scraper/discussions/new). I don't bite :D
 
-If you would like a feature added to the program or have some ideas, [start a discussion](https://github.com/Amenly/onlyfans-scraper/discussions/new)!
+If you would like a feature added to the program or have some ideas, [start a discussion](https://github.com/Amenly/of-scraper/discussions/new)!
